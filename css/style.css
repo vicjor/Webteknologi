@@ -1,0 +1,27 @@
+#byline {
+  opacity: 0.5;
+  font-size: 18px;
+}
+
+
+
+h1, h2, h3{
+  font-family: Aileron, sans-serif;
+}
+
+footer {
+  font-size: 12px;
+
+}
+
+body {
+  background-color:  #000010;
+  text-align: justify;
+  max-width: 800px;
+  margin: auto;
+  color: #808080;
+}
+
+#date {
+  font-size: 12px;
+}
