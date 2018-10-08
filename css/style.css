@@ -17,16 +17,17 @@ h1{
   margin-bottom: 10px;
   font-family: Verdana, cursive, sans-serif;
   font-size: 2em;
-
-
 }
+
 h2, h3{
   display: flex;
   justify-content: center;
   font-family: Georgia, sans-serif;
 }
 
-#TV, #FILM, #MUSIKK{
+
+
+#TV, #FILM, #MUSIKK, .template{
   margin-top: 10px;
   width: 500px;
   display: block;
