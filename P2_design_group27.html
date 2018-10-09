@@ -31,7 +31,9 @@
       <p>
          <img class="template" src="img/navstruct.png" alt="temp">
         The navigation structure of Mediafy's website is overall hierarchial; The mainpage is at the top and have access to all the subpages and some of the articles featured on the frontpage (top stories).
-        Next we have the subpages (music, film, series and about). These can reach eachother and the mainpage in a linear fashion through the navigation bar/meny. In addition the subpages will have different articles concerning each of these topics(exception in the about page which will only have information about the company).
+        Next we have the subpages (music, film, series and about). These can reach eachother and the mainpage in a linear fashion through the navigation bar/meny.
+        <br><br>
+        In addition the subpages will have different articles concerning each of these topics(exception in the about page which will only have information about the company).
         These different articles about distinct topics within music, film and series can only be reached from the respective subpage. That means that you can not click directly into an article about music from the film subpage, you'll have to go through the music subpage.
         From these articles you will be able to click directly into the different subpages and mainpage via the navbar, but you cannot however go directly from one article to another one in a linear fashion regardless of what subpage the article belongs to. This is to clearly separate which topic the different articles belongs to and give the site and easy to use and understand structure.
 
@@ -40,7 +42,11 @@
 
       <div class="layout">
       <h2>Page Layout and Appearance</h2>
-      <p>In making the decision about our page layout and design we wanted to focus on our goal to make the website have a clean and dark look with a sort of "vintage"-vibe. Therefore we chose to use a dark blue background (#28546C) with a very dark blue/light black article background and black, white and light gray  for nabber, footer and texts complementing these colors. We also wanted to focus on cool imagery and titles that helps the design of the page reach these goals. With this use of colors and images and trendy look we appeal to the target audience (younger users). This is also the reason for the modern and easy-look on the navbar. For fonts we will use Garamond for titles and Helvetica(Neue) for article texts.
+
+      <p>In making the decision about our page layout and design we wanted to focus on our goal to make the website have a clean and dark look with a sort of "vintage"-vibe. Therefore we chose to use a dark blue background (#28546C) with a very dark blue/light black article background and black, white and light gray  for nabber, footer and texts complementing these colors.
+          <img class="template" src="img/template.png" alt="temp">
+          <br>
+          We also wanted to focus on cool imagery and titles that helps the design of the page reach these goals. With this use of colors and images and trendy look we appeal to the target audience (younger users). This is also the reason for the modern and easy-look on the navbar. For fonts we will use Garamond for titles and Helvetica(Neue) for article texts.
       </p>
       </div>
 
@@ -51,33 +57,35 @@
       <p>The front page, index.html, will be the first page to appear when visiting the website.
       The front page will link to several subpages, but not all of them. On the top of the page there will be clickable images to editors pick, this weeks artist, series to watch this fall
       and this week in music. A javascript application to randomize picks will make sure that different articles will be shown.
-
+      <br><br>
       In the center we will have a slider through all three categories of the page; music, film and series. We are planning on using a javascript application
       for this slider.
-
+      <br><br>
       At the bottom of the front page, and also at the bottom of every subpage, we will have a footer with a subscription button to our newsletter, and general information, pseudo links to
-      forum, jobs, help, etc. To avoid repetition will will not describe the footer in every page.
+      forum, jobs, help, etc. To avoid repetition will will not describe the footer in every page. We will implement the footer through modularity.
     </p>
         <h3>2. About - about.html</h3>
         <img class="template" src="img/about.png" alt="temp">
         <p>The about page will give a short presentation about what Mediafy is, who Mediafy is run by, and what our purpose and goals is.
         This page will also display our contact information, and a short introduction of who the the founders are.
-
-        The about page will help us reach our goal of
+        <br><br>
     </p>
 
         <h3>3. Music - music.html</h3>
         <img class="template" src="img/musicmain.png" alt="temp">
-        <p>This will be the main page for music containing the different articles within this topic </p>
+        <p>This will be the main page for music containing the different articles within this topic. From this page you may access all the music articles, but none of the TV-show or movie articles. You may access the front page, video page or TV-show page with one click.
+            This page will help us achieve our goal by engaging music interested visitors.  </p>
 
         <h3>4. Movies - movies.html</h3>
         <img class="template" src="img/moviemain.png" alt="temp">
-        <p>This will be the main page for movies containing the different articles within this topic</p>
+        <p>This will be the main page for movies containing the different articles within this topic. You may access movie articles, but not music or TV-show articles. With one click you can redirect to the frontpage, or to the main page for music or TV.
+            This page will help us achieve our goal by engaging movie interested visitors.</p>
 
 
         <h3>5. Series - series.html</h3>
         <img class="template" src="img/tvmain.png" alt="temp">
-        <p>This will be the main page for series containing the different articles within this topic</p>
+        <p>This will be the main page for series containing the different articles within this topic. Same as with the movie and TV-show main pages, you may only access articles about TV-shows from this page. You may still click your way to the frontpage, or main page for music or movies.
+        This page will help us achieve our goal by engaging TV-show interested visitors.</p>
 
         <h3>Articles</h3>
         <h3>6. Music Article 1(This weeks artist) - musicarticle1.html</h3>
@@ -85,7 +93,7 @@
         <img class="template" src="img/samfender.png" alt="temp">
 
         <p><br><br>The next article pages will follow this template described in the layout section. We will start out with 3 articles within each topic.
-            We only have drafts/ideas of what these articles will contain so these topics are not final, but will be written in project 3. In short these articles will be about things like «This weeks <"artist, movie, series">» and Editors Picks. Every article will look almost the same as the one above and the template, only differeing in the picture and content. </p>
+            We only have drafts/ideas of what these articles will contain so these topics are not final, but will be written in project 3. In short these articles will be about things like «This weeks "artist, movie, series"» and Editors Picks. Every article will look almost the same as the one above and the template, only differeing in the picture and content. </p>
         <img class="template" src="img/template.png" alt="temp">
         <ul>
              <li>6. Music Article 1 (This weeks artist) - musicarticle1.html (displayed above)</li>
@@ -109,37 +117,36 @@
           <ul>
               <li>slider.js
                   <ul>
-                      <li>This script will be the application to run the slider for our images on the frontpage, and other subpages a slider might be used.</li>
+                      <li>This script will be the application to run the slider for our images on the frontpage, and other subpages a slider might be used. Erling is the one responsible for implementing this script.</li>
                   </ul>
               </li>
               <li> randomPicks.js
                   <ul>
-                      <li>As described in the previous sections, on the frontpage and the main pages for all three categories we will have top picks, editor picks and weekly picks. To avoid always showing the same images with link to the same article, this application will randomly pick e.g. one of the top picks and show the article image as an clickable link.</li>
+                      <li>As described in the previous sections, on the frontpage and the main pages for all three categories we will have top picks, editor picks and weekly picks. To avoid always showing the same images with link to the same article, this application will randomly pick e.g. one of the top picks and show the article image as an clickable link. Erling is responsible for this script.</li>
                   </ul>
               </li>
               <li>subscribe.js
                   <ul>
-                      <li>Name of the script says it all. This script will mock the funciton of a "Subscribe to our newsletter" button which will be placed in the footer of every page. The script will print something along the lines of "Thank you for subscribing" to the person browsing, without actually signing up the user.</li>
+                      <li>Name of the script says it all. This script will mock the funciton of a "Subscribe to our newsletter" button which will be placed in the footer of every page. The script will print something along the lines of "Thank you for subscribing" to the person browsing, without actually signing up the user. Victor is responsible to implement this script and the button in the footer.</li>
                   </ul>
               </li>
               <li>coverAnimation.js
                   <ul>
-                      <li>This script is somewhat more advanced than the other three. When hovering an album by an artist, the idea is that an LP  will slide out from the album cover and display some more information about hte album / artist. </li>
+                      <li>This script is somewhat more advanced than the other three. When hovering an album by an artist, the idea is that an LP  will slide out from the album cover and display some more information about hte album / artist. This is probably the most advanced script we will use, and William will be the one responsible to complete this.  </li>
                   </ul>
               </li>
           </ul>
-      </p>
       </div>
 
       <div class="plan">
       <h2>Planning and delegations of tasks</h2>
-      <p>All of the following files will be available in a directory named "Documents" on <a href="www.folk.ntnu.no/victojo">www.folk.ntnu.no/victojo </a>. </p>
 
-      <p>We have decided to set our due date for the files to be completed by 04.11.2018. This gives us 1 week for testing and time to make other changes we may see fit. </p>
-        <p>  We have shared responsibility for every part of the project. Each of us is responsible for writing one music-, TV- and movie article within our due date.
+      <p>We have decided to set our due date for the files to be completed by 04.11.2018. This gives us 1 week for testing and time to make other changes we may see fit.
+          <br><br>
+          We have shared responsibility for every part of the project. Each of us is responsible for writing one music-, TV- and movie article within our due date.
         All three of us has to contribute to evert part of the project. That is, completing the HTML, JavaScript, CSS, and all additional files such as images. Victor has
         the main responsibility for the HTML, William for the CSS and Erling for the JavaScripts. Erling also has the responsibility for the menubar and the modularity.</p>
-
+        <br><br>
       <p>
       This is our structure of all our files to the webpage, each file/folder with a specific deadline and responsible person:
       <ul>
@@ -174,6 +181,7 @@
           <li>modularity/ - 04.11.2018, Erling has the responsibility for the menu bar.
               <ul>
                   <li>menu.part</li>
+                  <li>footer</li>
               </ul>
           </li>
           <li>scripts/ - 04.11.2018, Erling has the main responsibility that all of the scripts are completed within the deadline.
@@ -186,11 +194,9 @@
             </ul>
           </li>
           <li>style.css - 04.11.2018, Victor has main responsibility that the CSS is complete within the deadline.</li>
-
-          </script>
       </ul>
-
-      </p>
+      <p>All of the files above will be available in a directory named "Documents" on <a href="www.folk.ntnu.no/victojo">www.folk.ntnu.no/victojo </a>. </p>
+      <br><br>
       </div>
 
 
