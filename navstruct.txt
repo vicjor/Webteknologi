@@ -1,0 +1,10 @@
+NAVIGATION STRUCTURE
+
+The navigation structure of Mediafy's website is overall hierarchial; The mainpage is at the top and have access to all the subpages and some of the articles featured on the frontpage(top stories).
+Next we have the subpages(music, film, series and about). These can reach eachother and the mainpage in a linear fashion through the navigation bar/meny. In addition the subpages will have different articles concerning each of these topics(exception in the about page which will only have information about the company).
+These different articles about distinct topics within music, film and series can only be reached from the respective subpage. That means that you can not click directly into an article about music from the film subpage, you'll have to go through the music subpage.
+From these articles you will be able to click directly into the different subpages and mainpage via the navbar, but you cannot however go directly from one article to another one in a linear fashion regardless of what subpage the article belongs to. This is to clearly separate which topic the different articles belongs to and give the site and easy to use and understand structure.
+
+PAGE LAYOUT AND APPEARANCE
+
+In making the decision about our page layout and design we wanted to focus on our goal to make the website have a clean and dark look with a sort of "vintage"-vibe. Therefore we chose to use a dark blue background (#28546C) with a very dark blue/light black article background and black, white and light gray  for nabber, footer and texts complementing these colors. We also wanted to focus on cool imagery and titles that helps the design of the page reach these goals. With this use of colors and images and trendy look we appeal to the target audience(younger users). This is also the reason for the modern and easy-look on the navbar. For fonts we will use Garamond for titles and Helvetica(Neue) for article texts.
