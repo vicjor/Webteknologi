@@ -1,10 +1,50 @@
 #byline {
-  opacity: 0.5;
+  text-align:  center;
+  margin:auto;
+  font-family: Georgia, sans-serif;
   font-size: 18px;
+  color: #000000;
 }
 
-h1, h2, h3{
-  font-family: Aileron, sans-serif;
+h1{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-family: Verdana, cursive, sans-serif;
+  font-size: 2em;
+
+
+}
+h2, h3{
+  display: flex;
+  justify-content: center;
+  font-family: Georgia, sans-serif;
+}
+
+#TV, #FILM, #MUSIKK, .template {
+  margin-top: 10px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+li{
+  text-align: justify;
+  margin: auto;
+  max-width: 50ch;
+
+
+}
+p{
+
+  max-width:50ch;
+  text-align: justify;
+  margin: auto;
+  font-family: Georgia, serif;
+
+
 }
 
 footer {
@@ -12,18 +52,31 @@ footer {
   bottom: 0;
   margin-bottom: 10px;
   margin-left: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
 
 }
 
+
+/* HEI WILLI   AM */
+
 body {
+  background-image: url(../img/background.jpeg);
   background-color:  #000000;
   text-align: justify;
   max-width: 800px;
   margin: auto;
-  color: #808080;
+  color: #000000;
+  line-height: 1.5;
+
 
 }
 
+
+
 #date {
   font-size: 12px;
+  text-align: center;
+  margin: auto;
 }
