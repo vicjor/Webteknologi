@@ -1,5 +1,12 @@
 body {
-  background-color: #162229;
+  background-color: #28546C;
+  font-family: Helvetica Neue;
+  text-align: center;
+
+}
+
+h2 {
+  font-family: Garman;
 }
 
 button {
@@ -8,12 +15,22 @@ button {
   font-size: 20px;
   border: none;
   border-radius: 12px;
+  margin-right: 10px;
+}
+
+.foot1 {
+  font-family: Helvetica;
+  color: white;
+
 }
 
 footer {
+  background-color: #162229;
   position: fixed;
-  bottom: 10px;
-  width: 95%;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+
 }
 
 #email {
