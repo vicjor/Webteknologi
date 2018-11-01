@@ -1,0 +1,41 @@
+body {
+  background-color: #162229;
+}
+
+button {
+  background-color: #3D93C2;
+  font-family: Helvetica Neue;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 95%;
+}
+
+#email {
+  border-radius: 12px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #969696;
+  border: none;
+  height: 28px;
+}
+
+#subtext {
+  color: #969696;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+#thanks {
+  color: #969696;
+  margin-left: 10px;
+}
+
+form {
+  float: right;
+}

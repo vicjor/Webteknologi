@@ -3,24 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
 
 
+<hr>
     <footer>
-      <div class="wrap">
-        <div>
-          <input type="button" id="button" onclick="subscribe()"/>
-            <label class="button"  for="toggle" >
+      <form class="" action="index.html" method="post">
+          <div class="subtext" id="subtext">Subscribe to our newsletter!</div>
+          <input id="email" type="email" name="email" onfocus="this.value=''" onblur="this.value='Email'" value="Email" required>
+          <button type="button" name="button" id="toggle" onclick="subscribe()"> SUBSCRIBE</button>
+            <label class="button" for="toggle" >
             </label>
-        </div>
         <div class="parent">
-          <div class="text sub">Subscribe Now </div>
-            <div class="text thanks">Thanks for Subscribing </div>
+            <div class="thankstext" id="thanks" >Thank you for subscribing </div>
         </div>
-      </div>
+        </form>
     </footer>
 
-
+    <script src="js/subscribe.js"></script>
   </body>
 </html>
