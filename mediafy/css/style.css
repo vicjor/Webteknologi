@@ -22,12 +22,13 @@ button {
   font-family: Helvetica;
   color: white;
 
+
 }
 
 footer {
   background-color: #162229;
-  position: fixed;
-  bottom: 0px;
+  position: absolute;
+
   width: 100%;
   left: 0px;
 
@@ -51,6 +52,7 @@ footer {
 #thanks {
   color: #969696;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 form {
