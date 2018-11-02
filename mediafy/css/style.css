@@ -5,11 +5,11 @@ body {
 
 }
 
-h2 {
+footer h2 {
   font-family: Garman;
 }
 
-button {
+footer button {
   background-color: #3D93C2;
   font-family: Helvetica Neue;
   font-size: 20px;
@@ -34,7 +34,7 @@ footer {
 
 }
 
-#email {
+footer #email {
   border-radius: 12px;
   font-size: 20px;
   text-align: center;
@@ -43,18 +43,18 @@ footer {
   height: 28px;
 }
 
-#subtext {
+footer #subtext {
   color: #969696;
   margin-left: 10px;
   margin-bottom: 5px;
 }
 
-#thanks {
+footer #thanks {
   color: #969696;
   margin-left: 10px;
   margin-bottom: 10px;
 }
 
-form {
+footer form {
   float: right;
 }
