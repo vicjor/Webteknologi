@@ -254,7 +254,7 @@ nav a:hover::before {
   float: left;
   width: 33.33%;
   padding: 0;
-   
+
   margin:0;
   height: 500px;
 }
@@ -664,3 +664,76 @@ footer form {
     height:100em;
   }
 }*/
+
+
+/* Moviepage */
+#moviemainimg {
+  width: 75%;
+  height: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.wrapper {
+  width: 100%;
+  overflow: auto;
+}
+
+.latestmovies {
+  width: 50%;
+  float: left;
+  position: relative;
+
+
+}
+
+.latestmovies img{
+  width: 50%;
+
+}
+
+.topmovies {
+  width: 50%;
+  position: relative;
+  float: right;
+
+
+}
+
+.topmovies img {
+  width: 50%;
+
+}
+
+#ck {
+ position: absolute;
+ top: 50%;
+ bottom: 50%;
+ transform: translate(450%, -120%);
+ width: 10%;
+}
+
+#thisweeks {
+ position: absolute;
+ top: 30%;
+ bottom: 50%;
+ transform: translate(175%, -120%);
+ color: white;
+}
+
+#citizien {
+ position: absolute;
+ top: 45%;
+ bottom: 50%;
+ transform: translate(270%, 0%);
+ color: white;
+}
+ #about {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+ }
