@@ -667,7 +667,7 @@ footer form {
 
 
 /* Moviepage */
-#moviemainimg, #seriesmainimg{
+#moviemainimg, #seriesmainimg, #hillhouse, #netflix{
   width: 75%;
   height: 10%;
   display: block;
@@ -680,7 +680,13 @@ footer form {
 .wrap {
   width: 100%;
   overflow: auto;
-  margin-bottom: 100px;
+  margin-bottom: 250px;
+
+}
+
+.wrap a {
+  text-decoration: none;
+  outline: none;
 }
 
 .latestmovies, .latestseries {
