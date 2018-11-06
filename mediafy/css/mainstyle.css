@@ -667,7 +667,7 @@ footer form {
 
 
 /* Moviepage */
-#moviemainimg {
+#moviemainimg, #seriesmainimg{
   width: 75%;
   height: 10%;
   display: block;
@@ -677,12 +677,13 @@ footer form {
 
 }
 
-.wrapper {
+.wrap {
   width: 100%;
   overflow: auto;
+  margin-bottom: 100px;
 }
 
-.latestmovies {
+.latestmovies, .latestseries {
   width: 50%;
   float: left;
   position: relative;
@@ -690,12 +691,12 @@ footer form {
 
 }
 
-.latestmovies img{
+.latestmovies img, .latestseries img{
   width: 50%;
 
 }
 
-.topmovies {
+.topmovies, .topseries {
   width: 50%;
   position: relative;
   float: right;
@@ -703,7 +704,7 @@ footer form {
 
 }
 
-.topmovies img {
+.topmovies img, .topseries img{
   width: 50%;
 
 }
