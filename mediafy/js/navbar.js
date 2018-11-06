@@ -12,3 +12,12 @@ document.getElementById('navbar').innerHTML = '<div> <header id="header"> <div c
   </li>\
 </ul>\
 </nav> </div> </header> </div>';
+
+function myFunction() {
+  document.getElementsByClassName("navbar")[0].classList.toggle("responsive");
+}
+
+var scrollEventHandler = function(){
+    window.scroll(0,window.pageYOffset)
+}
+window.addEventListener("scroll",scrollEventHandler, false);
