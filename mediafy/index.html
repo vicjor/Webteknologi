@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Mediafy - The Latest In Music, Movies And Series</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
 
     <link rel="stylesheet" href="css/mainstyle.css">
@@ -21,20 +22,17 @@
         <div class="topimagesleft">
 
 
-          <a href="thisweeksartist.html"><img id="backgroundmain" src="images/musicbackground.jpg" alt="background"></a>
-          <a href="thisweeksartist.html"><img id="samfender" src="images/samfender2.jpeg" alt="#"></a>
-          <h1>THIS WEEKS ARTIST:</h1>
-          <h2>SAM FENDER</h2>
+          <a href="thisweeksartist.html"><img id="backgroundmain" src="images/frontpage1.jpg" alt="background"></a>
+          <!--<a href="thisweeksartist.html"><img id="samfender" src="images/samfender2.jpeg" alt="#"></a>-->
+
         </div>
 
         <div class="topimagesright">
 
-          <img  id="thisweekinmusic" src="images/camera.jpg" alt="#">
-          <img id="seriestowatch" src="images/seriespic.jpg" alt="#">
-          <a href="editorspicksmusic.html"><img id="editorspicks" src="images/editorspicks.jpg" alt="#" ></a>
-          <h1>EDITOR'S <br> PICKS</h1>
-          <h2>SERIES <br> TO WATCH <br>THIS FALL</h2>
-          <h3>TOP<br>MOVIES OF <br>ALL TIME </h3>
+          <img id="thisweekinmusic" src="images/frontpage3.jpg" alt="#">
+          <img id="seriestowatch" src="images/frontpage4.jpg" alt="#">
+          <a href="editorspicksmusic.html"><img id="editorspicks" src="images/frontpage2.jpg" alt="#" ></a>
+
 
         </div>
 
@@ -101,8 +99,17 @@
     <script src="js/navbar.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/subscribe.js"></script>
-    <script src="js/middleimageslider.js">
-
+    <script src="js/middleimageslider.js"></script>
+    <script>
+    function myFunction() {
+    document.getElementsByClassName("navbar")[0].classList.toggle("responsive");
+    }
+    </script>
+    <script>
+    var scrollEventHandler = function(){
+        window.scroll(0,window.pageYOffset)
+    }
+    window.addEventListener("scroll",scrollEventHandler, false);
 
     </script>
 

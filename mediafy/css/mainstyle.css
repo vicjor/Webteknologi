@@ -1,6 +1,11 @@
+html{
+  max-width: 100%;
+  overflow-x: hidden;
+}
 body{
 
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   min-height: 100%;
   margin:0;
   padding: 0;
@@ -16,7 +21,10 @@ body{
 .navbar{
   width: 80%;
   margin:0 auto;
+  position:relative;
+  top:0;
 }
+.navbar li.icon {display: none;}
 #header {
   background-color: #000;
 }
@@ -72,17 +80,46 @@ nav a::before {
 nav a:hover::before {
   width: 100%;
 }
+
+@media screen and (max-width:990px) {
+  .navbar li:not(:first-child) {display: none;}
+  .navbar li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+@media screen and (max-width:990px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive li {
+    float: none;
+    display: inline;
+  }
+  .navbar.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
 /******FRONTPAGE******/
 
 .topimages{
-  width:80%;
-  height: 20em;
+  width:100%;
+  position: absolute;
+  top:50px;
+
+  height: 50%;
   margin: 0 auto;
+
   overflow: hidden;
 }
  .topimages .topimagesleft{
   width:50%;
-  height: 60%;
+  height: 100%;
   position: absolute;
   left: 0;
   border-bottom: 3px solid black;
@@ -95,7 +132,7 @@ nav a:hover::before {
   width:100%;
   height:100%;
 }
-.topimages .topimagesleft #samfender{
+/*.topimages .topimagesleft #samfender{
   width: 300px;
   height:200px;
   border-radius: 3px;
@@ -104,92 +141,36 @@ nav a:hover::before {
   left:50%;
   transform: translate(-50%,-60%);
 }
-.topimages .topimagesleft h1{
-  font-family: Garamond;
-  font-size: 48pt;
-  color: #DEB887;
-  font-weight: 100;
-  position: absolute;
-  text-align: center;
-  top:0;
-  left: 40px;
-}
-.topimages .topimagesleft h2{
-  font-family: Garamond;
-  font-size: 48pt;
-  color: #DEB887;
-  font-weight: 100;
-  position: absolute;
-  text-align:  center;
-  top:55%;
-  left:50%;
-  transform: translate(-50%);
-}
+*/
 .topimages .topimagesright{
   position: absolute;
   right: 0;
   width:50%;
-  height:60%;
+  height:100%;
   margin:0;
   padding:0;
   border-bottom: 3px solid black;
   border-left: 3px solid black;
 }
-.topimages .topimagesright h1{
-  font-family: Garamond;
-  font-size: 48pt;
-  font-weight: 400;
-  line-height: 50px;
-  color: #A0522D;
-  font-weight: 100;
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-100%,-10%);
-}
-.topimages .topimagesright h2{
-  font-family: Garamond;
-  font-size: 32pt;
-  color: #DEB887;
-  position: absolute;
-  text-align: center;
-  top:50px;
-  right: 50px;
-}
-.topimages .topimagesright h3{
-  font-family: Garamond;
-  font-size: 32pt;
-  color: #DAA520;
-  position: absolute;
-  text-align: center;
-  top:-30px;
-  right: 420px;
-}
-@media screen and (max-width: 1000px){
+
+
+@media screen and (max-width: 768px){
   #seriestowatch,#editorspicks,#thisweekinmusic{
     display:none;
   }
   .topimages .topimagesleft{
     width:100%;
-    height:450px;
-  }
-  .topimages .topimagesleft h1{
+    height: 100%;
+
     margin:auto;
-    text-align: center;
-  }
-  .topimages .topimagesleft h2{
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,100%);
+
   }
   .topimages .topimagesright{
     border-bottom: none;
     border-left: none;
-  }
-  .topimages .topimagesright h1,.topimagesright h2,.topimagesright h3{
     display:none;
   }
+
 }
 .topimages .topimagesright #thisweekinmusic{
   margin:0;
@@ -222,12 +203,17 @@ nav a:hover::before {
   margin: auto 5%;
   width: 90%;
   position: absolute;
-  top: 1100px;
+  top: 1200px;
+}
+.frontpages a{
+  text-decoration: none;
+
 }
 .frontpages button{
   text-align: center;
   font-family: Helvetica Neue;
   font-size: 16pt;
+
   outline: none;
   color: #DEB887;
   float: left;
@@ -242,21 +228,33 @@ nav a:hover::before {
   background-color: #DEB887;
   color: #CD853F;
 }
-@media screen (max-width:1000px) {
-   .frontpages button{display:block;}
+
+@media screen and (max-width:990px) {
+   .frontpages button{
+     float:none;
+     width: 50%;
+     text-decoration: none;
+     outline:none;
+     margin:10px 25%;
+     display:block;
+
+   }
+
 }
 .middlemenu{
   width: 90%;
   height: 500px;
-  margin: auto 5%;
+  margin: 5%;
+  margin-top: 50%;
   position: absolute;
-  top:35em;
+  top:0;
   background-color: #DEB887;
 }
 .column {
   float: left;
   width: 33.33%;
   padding: 0;
+   
   margin:0;
   height: 500px;
 }
@@ -271,7 +269,7 @@ nav a:hover::before {
   float: left;
   width: 30%;
   padding: 0 5px;
-  margin-left:30px;
+  margin-left:20px;
   margin-bottom:0;
 }
 .column2 img{
@@ -284,7 +282,7 @@ nav a:hover::before {
   margin-bottom: 5px;
   height: 40px;
   font-family: Helvetica;
-  font-size: 26pt;
+  font-size: 20pt;
   text-align: center;
 }
 .column2 .goto a{
@@ -301,9 +299,9 @@ nav a:hover::before {
 .latest{
   width: 100%;
   height: 500px;
-  margin-bottom:50px;
+  margin-bottom:1000px;
   position: absolute;
-  top: 1200px;
+  top: 1300px;
   background-color: #162229;
 }
 .latest h1{
@@ -314,7 +312,7 @@ nav a:hover::before {
   color: white;
   text-decoration: underline;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .row #c1 {
     width: 100%;
 
@@ -336,6 +334,13 @@ nav a:hover::before {
 }
 
 
+@media screen and (max-width:1024px) {
+  .column2 .goto{
+    font-size: 14pt;
+  }
+}
+
+
 .sitewidth{
   min-height: 100%;
   margin-bottom: 10em;
@@ -343,17 +348,101 @@ nav a:hover::before {
 
 
 .wrapper{
-
+  padding:0;
+  margin:0;
   min-height: 100%;
   margin-bottom: 100%;
 
 }
 .empty{
-  height: 50px;
+  height: 500px;
   background-color: #DEB887;
-  margin:0;
-  padding: 0;
+  margin:10px;
+  padding: 5px;
 }
+
+.middlemenu:before,
+.middlemenu:after {
+    content: "";
+    display: table;
+}
+
+.middlemenu:after {
+    clear: both;
+}
+.wrapper:before,
+.wrapper:after {
+    content: "";
+    display: table;
+}
+
+.wrapper:after {
+    clear: both;
+}
+.empty:before,
+.empty:after {
+    content: "";
+    display: table;
+}
+
+.empty:after {
+    clear: both;
+}
+.topimages:before,
+.topimages:after {
+    content: "";
+    display: table;
+}
+
+.topimages:after {
+    clear: both;
+}
+.latest:before,
+.lates:after {
+    content: "";
+    display: table;
+}
+
+.latest:after {
+    clear: both;
+}
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+.topimagesleft:before,
+.topimagesleft:after {
+    content: "";
+    display: table;
+}
+
+.topimagesleft:after {
+    clear: both;
+}
+.topimagesright:before,
+.topimagesright:after {
+    content: "";
+    display: table;
+}
+
+.topimagesright:after {
+    clear: both;
+}
+.frontpages:before,
+.frontpages:after {
+    content: "";
+    display: table;
+}
+
+.frontpages:after {
+    clear: both;
+}
+
 
 
 
@@ -385,7 +474,10 @@ article header{
 }
 article .text{
   padding: 20px 100px;
-  text-align: center;
+  display: block;
+  margin: auto;
+
+
 }
 article .text h4{
   text-align: center;
@@ -457,8 +549,6 @@ article .text img{
   font-family: Garamond;
   font-size: 48pt;
 
-
-
 }
 .image > h4{
   position: absolute;
@@ -506,7 +596,9 @@ footer {
   background-color: #162229;
   width: 100%;
   height: 200px;
-  position: absolute;
+  position: fixed;
+  bottom:0;
+  left:0;
   text-align: center;
   font-family: Garamond;
 
@@ -547,11 +639,28 @@ footer form {
   width:250px;
 }
 */
-@media screen and (max-width:1000px) {
+/*@media screen and (max-width:1230px) {
   .latest{
     top: 80em;
   }
   .empty{
-    height:80em;
+    height:30em;
+  }
+
+}
+@media screen and (max-width:1000px) {
+  .latest{
+    top: 90em;
+  }
+  .empty{
+    height:90em;
   }
 }
+@media screen and (max-width:700px) {
+  .latest{
+    top: 90em;
+  }
+  .empty{
+    height:100em;
+  }
+}*/
