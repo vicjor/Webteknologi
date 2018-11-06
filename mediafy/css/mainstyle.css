@@ -1,18 +1,31 @@
 html{
   max-width: 100%;
   overflow-x: hidden;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+
+
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 body{
 
   max-width: 100%;
   overflow-x: hidden;
   min-height: 100%;
+  position: relative;
+
   margin:0;
   padding: 0;
 
   background-color: #DEB887;
   font-family: Helvetica Neue;
   font-weight: lighter;
+
 
 }
 
@@ -106,18 +119,20 @@ nav a:hover::before {
 }
 
 /******FRONTPAGE******/
+ .topimages{
 
-.topimages{
-  width:100%;
   position: absolute;
   top:50px;
+  width:100%;
+  /* top:50px; */
 
   height: 50%;
   margin: 0 auto;
 
   overflow: hidden;
 }
- .topimages .topimagesleft{
+
+.topimages .topimagesleft{
   width:50%;
   height: 100%;
   position: absolute;
@@ -125,14 +140,18 @@ nav a:hover::before {
   border-bottom: 3px solid black;
   margin:0;
   padding:0;
-}
+  }
+
 .topimages .topimagesleft #backgroundmain{
+  display: block;
   margin:0;
   padding:0;
   width:100%;
   height:100%;
 }
-/*.topimages .topimagesleft #samfender{
+
+.topimages .topimagesleft #samfender{
+  display: block;
   width: 300px;
   height:200px;
   border-radius: 3px;
@@ -141,7 +160,7 @@ nav a:hover::before {
   left:50%;
   transform: translate(-50%,-60%);
 }
-*/
+
 .topimages .topimagesright{
   position: absolute;
   right: 0;
@@ -154,31 +173,18 @@ nav a:hover::before {
 }
 
 
-@media screen and (max-width: 768px){
-  #seriestowatch,#editorspicks,#thisweekinmusic{
-    display:none;
-  }
-  .topimages .topimagesleft{
-    width:100%;
-    height: 100%;
 
-    margin:auto;
-
-  }
-  .topimages .topimagesright{
-    border-bottom: none;
-    border-left: none;
-    display:none;
-  }
-
-}
 .topimages .topimagesright #thisweekinmusic{
+  display: block;
   margin:0;
   padding:0;
   width:50%;
   height: 40%;
 }
+
+
 .topimages .topimagesright #seriestowatch{
+  display: block;
   border-left: 3px solid black;
   margin:0;
   padding:0;
@@ -188,7 +194,9 @@ nav a:hover::before {
   width:50%;
   height:100%;
 }
+
 .topimages .topimagesright #editorspicks{
+  display: block;
   border-top: 3px solid black;
   margin:0;
   padding:0;
@@ -198,12 +206,33 @@ nav a:hover::before {
   left:0;
   bottom: 0;
 }
+
+@media screen and (max-width: 1200px){
+  #seriestowatch,#editorspicks,#thisweekinmusic{
+    display:none;
+  }
+  .topimages .topimagesleft{
+    width:100%;
+    height: 100%;
+    margin:auto;
+
+  }
+
+  .topimages .topimagesright{
+    border-bottom: none;
+    border-left: none;
+    display:none;
+  }
+
+}
+
+
 .frontpages{
-  height: 60px;
+  height: 200px;
   margin: auto 5%;
   width: 90%;
   position: absolute;
-  top: 1200px;
+  top: 1100px;
 }
 .frontpages a{
   text-decoration: none;
@@ -244,17 +273,16 @@ nav a:hover::before {
 .middlemenu{
   width: 90%;
   height: 500px;
-  margin: 5%;
-  margin-top: 50%;
+  margin: 50px 5%;
+
   position: absolute;
-  top:0;
+  top:55%;
   background-color: #DEB887;
 }
 .column {
   float: left;
   width: 33.33%;
   padding: 0;
-
   margin:0;
   height: 500px;
 }
@@ -270,10 +298,11 @@ nav a:hover::before {
   width: 30%;
   padding: 0 5px;
   margin-left:20px;
-  margin-bottom:0;
+  margin-top: 20px;
 }
 .column2 img{
-  height: 300px;
+  display: block;
+  height: 100%;
 }
 .column2 .goto{
   background-color: #D2B48C;
@@ -291,7 +320,7 @@ nav a:hover::before {
 }
 
 /* Clear floats after image containers */
-.row::after {
+.row::after,.row2::after {
   content: "";
   clear: both;
   display: table;
@@ -299,7 +328,8 @@ nav a:hover::before {
 .latest{
   width: 100%;
   height: 500px;
-  margin-bottom:1000px;
+  margin: 5% 0;
+
   position: absolute;
   top: 1300px;
   background-color: #162229;
@@ -343,25 +373,29 @@ nav a:hover::before {
 
 .sitewidth{
   min-height: 100%;
-  margin-bottom: 10em;
+  margin-bottom: 200px;
 }
 
 
 .wrapper{
-  padding:0;
-  margin:0;
   min-height: 100%;
-  margin-bottom: 100%;
+  margin-bottom: -200px;
+  /* display:block; */
 
 }
-.empty{
-  height: 500px;
+
+/*.empty{
+  display: block;
+  position: absolute;
+  bottom:0;
+  height: 200px;
+  width: 100%;
   background-color: #DEB887;
-  margin:10px;
-  padding: 5px;
+  visibility: hidden;
+*/
 }
 
-.middlemenu:before,
+/*.middlemenu:before,
 .middlemenu:after {
     content: "";
     display: table;
@@ -370,24 +404,9 @@ nav a:hover::before {
 .middlemenu:after {
     clear: both;
 }
-.wrapper:before,
-.wrapper:after {
-    content: "";
-    display: table;
-}
 
-.wrapper:after {
-    clear: both;
-}
-.empty:before,
-.empty:after {
-    content: "";
-    display: table;
-}
-
-.empty:after {
-    clear: both;
-}
+*/
+/*
 .topimages:before,
 .topimages:after {
     content: "";
@@ -406,6 +425,7 @@ nav a:hover::before {
 .latest:after {
     clear: both;
 }
+
 .row:before,
 .row:after {
     content: "";
@@ -442,6 +462,8 @@ nav a:hover::before {
 .frontpages:after {
     clear: both;
 }
+*/
+
 
 
 
@@ -512,17 +534,17 @@ article .text img{
   margin: 20px auto;
   display: block;
   justify-content: center;
-  width: 74%;
+  width: 70%;
   position:relative;
   }
-#samfender{
+/*#samfender{
     width: 450px;
     height:400px;
     position: absolute;
     top: 50%;
     left:50%;
     transform: translate(-50%,-35%);
-}
+}*/
 .image > h2{
   position: absolute;
   top: 40px;
@@ -581,26 +603,34 @@ footer button {
   margin-right: 10px;
 }
 
-.foot1 {
+footer h1, p {
   font-family: Helvetica;
   color: white;
 }
-.foot{
-  position:absolute;
-  top:100%;
+/*.foot{
+  margin-bottom:0;
+  margin-left:0;
   width:100%;
   height:200px;
 }
-
+*/
 footer {
   background-color: #162229;
+  display: inline-block;
+
   width: 100%;
   height: 200px;
-  position: fixed;
-  bottom:0;
-  left:0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display:block;
+  visibility: hidden;
+
   text-align: center;
   font-family: Garamond;
+
+
+
 
 }
 footer h1{
@@ -660,12 +690,10 @@ footer form {
   .latest{
     top: 90em;
   }
-  .empty{
+.empty{
     height:100em;
   }
 }*/
-
-
 /* Moviepage */
 #moviemainimg, #seriesmainimg, #hillhouse, #netflix{
   width: 75%;
