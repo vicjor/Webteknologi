@@ -728,12 +728,10 @@ footer form {
   width: 50%;
   float: left;
   position: relative;
-
-
 }
 
 .latestmovies img, .latestseries img{
-  width: 50%;
+  width: 70%;
 
 }
 
@@ -746,7 +744,7 @@ footer form {
 }
 
 .topmovies img, .topseries img{
-  width: 50%;
+  width: 70%;
 
 }
 
