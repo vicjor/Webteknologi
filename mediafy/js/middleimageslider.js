@@ -7,7 +7,11 @@ var text3 = document.getElementById('innertext3');
 var columnlist = [column1,column2,column3];
 var textlist = [text1,text2,text3];
 var text = ['MUSIC','MOVIES','SERIES','DISCOVER','NEW RELEASES','EDITORS PICKS','DISCOVER','THE<br>BEST<br>OF','EVERY<br>THING','NEW','CONTENT','EVERY WEEK','WE','ARE','MEDIAFY','THE','LATEST','IN','MUSIC','MOVIES','SERIES'];
+<<<<<<< HEAD
 var list = ['#DEB887','#DEB887','#DEB887','#DAA520','#D2B48C','#CD853F','#8B4513','#A0522D'];
+=======
+var list = ['#DEB887','#DEB887','#DEB887','#DAA520','#D2B48C','#CD853F','#8B4513','#CD853F','#A0522D','#DAA520','#D2B48C','#8B4513'];
+>>>>>>> william
 var index = 0;
 
 
@@ -22,7 +26,11 @@ function imageChange(){
         clearTimeout(time);
         return;
     }
+<<<<<<< HEAD
     var color = list[index%6];
+=======
+    var color = list[index%list.length];
+>>>>>>> william
     var column = columnlist[index%3];
     var txt = text[index];
     var t = textlist[index%3];
@@ -36,7 +44,11 @@ function imageChange(){
 function imageChangeResponsive(x){
     var x = window.matchMedia("(max-width: 1000px)");
     if(x.matches){
+<<<<<<< HEAD
     var color = list[index%6];
+=======
+    var color = list[index%list.length];
+>>>>>>> william
     var column = columnlist[0];
     var txt = text[index];
     var t = textlist[0];
