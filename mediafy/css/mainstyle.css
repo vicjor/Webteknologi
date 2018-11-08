@@ -236,7 +236,7 @@ nav a:hover::before {
   margin: auto 5%;
   width: 90%;
   position: absolute;
-  top: 140%;
+  top: 1100px;
 }
 .frontpages a{
   text-decoration: none;
@@ -262,18 +262,27 @@ nav a:hover::before {
   color: #CD853F;
 }
 
-@media screen and (max-width:990px) {
+
+ @media screen and (max-width:990px) {
    .frontpages button{
      float:none;
      width: 50%;
      text-decoration: none;
      outline:none;
-     margin:10px 25%;
+     margin:20px 25%;
      display:block;
+     /* top:100%; */
 
    }
 
 }
+/* @media sceen and (max-width:400px) {}
+  .frontpages{
+    position: absolute;
+    top:50%;
+  }
+} */
+
 .middlemenu{
   width: 90%;
   height: 500px;
@@ -336,7 +345,7 @@ nav a:hover::before {
   margin: 5% 0;
 
   position: absolute;
-  top: 150%;
+  top: 1200px;
   background-color: #162229;
 }
 .latest h1{
@@ -349,7 +358,7 @@ nav a:hover::before {
 }
 .frontfooter{
   position: absolute;
-  top:230%;
+  top:1900px;
 }
 @media screen and (max-width: 1024px) {
   .row #c1 {
@@ -369,9 +378,18 @@ nav a:hover::before {
   }
   .latest{
     background-color: #DEB887;
+    top:1400px;
+  }
+  .frontfooter{
+    top:2750px;
   }
 }
+@media screen and (max-width:680px) {
 
+  .frontfooter{
+    top:2350px;
+  }
+}
 
 @media screen and (max-width:1024px) {
   .column2 .goto{
@@ -679,6 +697,9 @@ footer #thanks {
   font-family: Helvetica Neue, Helvetica;
 }
 
+/* footer form {
+  float: right;
+} */
 /*footer input[type="email"]{
   width:250px;
 }
