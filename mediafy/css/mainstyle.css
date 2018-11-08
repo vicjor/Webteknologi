@@ -608,7 +608,7 @@ footer h2 {
   font-family: Garamond;
 }
 
-footer button {
+footer input {
   background-color: #3D93C2;
   font-family: Helvetica Neue;
   font-size: 20px;
@@ -679,9 +679,6 @@ footer #thanks {
   font-family: Helvetica Neue, Helvetica;
 }
 
-footer form {
-  float: right;
-}
 /*footer input[type="email"]{
   width:250px;
 }
