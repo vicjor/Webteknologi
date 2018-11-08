@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mediafy - The Latest In Music, Movies And Series</title>
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="css/mainstyle.css">
+
+
+  </head>
+  <body>
+      <div id="navbar"></div>
+      <div class="sitewidth">
+
+
+
+      <div class="topimages">
+        <div class="topimagesleft">
+
+          <a href="thisweeksartist.html"><img id="backgroundmain" src="images/frontpage1.jpg" alt="background"></a>
+          <!--<a href="thisweeksartist.html"><img id="samfender" src="images/samfender2.jpeg" alt="#"></a>-->
+
+        </div>
+
+        <div class="topimagesright">
+
+         <a href="top5movies.html"> <img id="thisweekinmusic" src="images/frontpage3.jpg" alt="#"></a>
+         <a href="newseries.html"> <img id="seriestowatch" src="images/frontpage4.jpg" alt="#"></a>
+          <a href="editorspicksmusic.html"><img id="editorspicks" src="images/frontpage2.jpg" alt="#" ></a>
+
+
+        </div>
+
+
+      </div>
+      <div class="frontpages">
+          <a href="music.html"> <button type="button" name="gotomusic">GO TO MUSIC</button></a>
+          <a href="movies.html"><button type="button" name="gotofilm">GO TO FILM</button></a>
+          <a href="series.html"><button type="button" name="gotoseries">GO TO SERIES</button></a>
+
+      </div>
+      <div class="middlemenu">
+
+        <div class="row">
+          <div class="column" id="c1">
+            <h1 id="innertext1">MUSIC</h1>
+
+            </div>
+          <div class="column" id="c2">
+
+              <h1 id="innertext2">MOVIES</h1>
+          </div>
+          <div class="column" id="c3">
+              <!--<img src="images/TV.jpg" alt="Mountains" style="width:100%">-->
+              <h1 id="innertext3">SERIES</h1>
+          </div>
+
+        </div>
+
+      </div>
+
+    <div class="latest">
+        <h1>Top Stories</h1>
+        <div class="row2">
+
+          <div class="column2">
+             <a href="thisweeksshow.html"> <img src="images/theater.jpg" alt="#" style="width:100%"></a>
+              <div class="goto">
+                  <a href="thisweeksshow.html">THIS WEEKS SHOW</a>
+              </div>
+          </div>
+          <div class="column2">
+              <a href="editorspicksmusic.html"><img src="images/label.jpg" alt="#" style="width:100%"></a>
+              <div class="goto">
+                  <a href="editorspicksmusic.html">EDITOR'S PICKS</a>
+              </div>
+          </div>
+          <div class="column2">
+              <a href="thisweeksartist.html"><img src="images/musicbackground.jpg" alt="#" style="width:100%"></a>
+              <div class="goto">
+                  <a href="thisweeksartist.html">THIS WEEKS ARTIST</a>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="empty">
+      </div>
+
+
+
+
+    </div>
+    <footer class = "frontfooter" id="foot"></footer>
+
+
+
+
+    <script src="js/navbar.js"></script>
+    <!-- <script src="js/responsivenav.js"> -->
+
+    </script>
+    <script src="js/footer.js"></script>
+    <script src="js/subscribe.js"></script>
+    <script src="js/middleimageslider.js"></script>
+    <script>
+    function myFunction() {
+    document.getElementsByClassName("navbar")[0].classList.toggle("responsive");
+    }
+    </script>
+    <script>
+    var scrollEventHandler = function(){
+        window.scroll(0,window.pageYOffset)
+    }
+    window.addEventListener("scroll",scrollEventHandler, false);
+
+    </script>
+
+  </body>
+</html>
