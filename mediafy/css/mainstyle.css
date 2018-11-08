@@ -774,8 +774,8 @@ footer form {
 
 }
 .latestmovies img, .topmovies img,.latestseries img,.topseries img{
-  width:350px;
-  height:300px;
+  width:250px;
+  height:200px;
 }
 
 
@@ -787,7 +787,11 @@ footer form {
 /* .topmovies{
   border-left: 5px solid black;
 } */
-
+@media screen and (max-width:680px) {
+    .latestmovies, .topmovies{
+      width:100%;
+    }
+}
 
 #ck {
  position: absolute;
