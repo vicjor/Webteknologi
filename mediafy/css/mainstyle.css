@@ -16,11 +16,7 @@ body{
 
   max-width: 100%;
   overflow-x: hidden;
-<<<<<<< HEAD
-  min-height: 100%;
-=======
   min-height: 100vh;
->>>>>>> william
   position: relative;
 
   margin:0;
@@ -51,11 +47,7 @@ body{
   clear: both;
 }
  .navbar h1{
-<<<<<<< HEAD
-  text-shadow: #DEB887 1px -3px;
-=======
   text-shadow: #DEB887 1px 3px;
->>>>>>> william
   color: white;
   float: left;
   margin: 10px auto;
@@ -108,12 +100,9 @@ nav a:hover::before {
     float: right;
     display: inline-block;
   }
-<<<<<<< HEAD
-=======
   .topimages{
     z-index: -1;
   }
->>>>>>> william
 }
 @media screen and (max-width:990px) {
   .navbar.responsive {position: relative;}
@@ -138,16 +127,10 @@ nav a:hover::before {
   position: absolute;
   top:50px;
   width:100%;
-<<<<<<< HEAD
-  /* top:50px; */
-
-  height: 50%;
-=======
   /* z-index: -1; */
   /* top:50px; */
 
   height: 60%;
->>>>>>> william
   margin: 0 auto;
 
   overflow: hidden;
@@ -228,11 +211,7 @@ nav a:hover::before {
   bottom: 0;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 1200px){
-=======
 @media screen and (max-width: 1000px){
->>>>>>> william
   #seriestowatch,#editorspicks,#thisweekinmusic{
     display:none;
   }
@@ -257,11 +236,7 @@ nav a:hover::before {
   margin: auto 5%;
   width: 90%;
   position: absolute;
-<<<<<<< HEAD
-  top: 1100px;
-=======
   top: 140%;
->>>>>>> william
 }
 .frontpages a{
   text-decoration: none;
@@ -305,11 +280,7 @@ nav a:hover::before {
   margin: 50px 5%;
 
   position: absolute;
-<<<<<<< HEAD
-  top:55%;
-=======
   top:65%;
->>>>>>> william
   background-color: #DEB887;
 }
 .column {
@@ -349,10 +320,7 @@ nav a:hover::before {
 }
 .column2 .goto a{
   text-decoration: none;
-<<<<<<< HEAD
-=======
 
->>>>>>> william
   color: #000;
 }
 
@@ -368,11 +336,7 @@ nav a:hover::before {
   margin: 5% 0;
 
   position: absolute;
-<<<<<<< HEAD
-  top: 1300px;
-=======
   top: 150%;
->>>>>>> william
   background-color: #162229;
 }
 .latest h1{
@@ -383,13 +347,10 @@ nav a:hover::before {
   color: white;
   text-decoration: underline;
 }
-<<<<<<< HEAD
-=======
 .frontfooter{
   position: absolute;
   top:230%;
 }
->>>>>>> william
 @media screen and (max-width: 1024px) {
   .row #c1 {
     width: 100%;
@@ -427,11 +388,7 @@ nav a:hover::before {
 
 .wrapper{
   min-height: 100%;
-<<<<<<< HEAD
-  margin-bottom: -200px;
-=======
   margin-bottom: 200px;
->>>>>>> william
   /* display:block; */
 
 }
@@ -444,10 +401,6 @@ nav a:hover::before {
   width: 100%;
   background-color: #DEB887;
   visibility: hidden;
-<<<<<<< HEAD
-
-=======
->>>>>>> william
 }
 
 /*.middlemenu:before,
@@ -531,11 +484,7 @@ nav a:hover::before {
 /******ARTICLE******/
 article{
   background-color: #162229;
-<<<<<<< HEAD
-  padding: 20px 30px;
-=======
   padding: 20px 20px;
->>>>>>> william
   margin: 20px auto;
 
   font-family: Helvetica Neue;
@@ -544,28 +493,19 @@ article{
   font-size: 18px;
   color: #FFF;
   max-width: 70%;
-<<<<<<< HEAD
-}
-=======
 
 }
 /* .article{
   max-width: 70%;
 } */
 
->>>>>>> william
 
 article header{
   font-family: Garamond ;
   line-height: 1.5;
-<<<<<<< HEAD
-  font-size: 48px;
-  text-align: center;
-=======
   font-size: 32pt;
   text-align: center;
   margin: auto;
->>>>>>> william
 
 }
 article .text{
@@ -582,23 +522,14 @@ article .text h4{
 
   font-family: Garamond;
   font-weight: lighter;
-<<<<<<< HEAD
-  font-size: 20pt;
-=======
   font-size: 28pt;
->>>>>>> william
 
 }
 article .text img{
   display: block;
   margin: auto;
-<<<<<<< HEAD
-  justify-content: center;
-  border-radius: 100%;
-=======
 
 
->>>>>>> william
   width:250px;
   height: 250px;
 
@@ -618,11 +549,7 @@ article .text img{
   display: block;
   justify-content: center;
   width: 70%;
-<<<<<<< HEAD
-  position:relative;
-=======
   /* position:relative; */
->>>>>>> william
   }
 /*#samfender{
     width: 450px;
@@ -642,16 +569,6 @@ article .text img{
   font-size: 48pt;
 
 }
-<<<<<<< HEAD
-.image #editheadline{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  font-size: 64pt;
-  color: #A0522D;
-}
-=======
 /* .image #editheadline{
 
   margin-left: 250px;
@@ -659,7 +576,6 @@ article .text img{
   font-size: 64pt;
   color: #A0522D;
 } */
->>>>>>> william
 .image > h3{
   position: absolute;
   top: 120px;
@@ -686,10 +602,7 @@ iframe{
   padding-bottom: 20px;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> william
 /******FOOTER******/
 footer h2 {
   font-family: Garamond;
@@ -708,24 +621,11 @@ footer h1, p {
   font-family: Helvetica;
   color: white;
 }
-<<<<<<< HEAD
-
-/* .foot{
-=======
 /*.foot{
->>>>>>> william
   margin-bottom:0;
   margin-left:0;
   width:100%;
   height:200px;
-<<<<<<< HEAD
-
-} */
-
-footer {
-  background-color: #162229;
-  /* display: inline-block; */
-=======
 }
 */
 footer {
@@ -734,7 +634,6 @@ footer {
   /* background-color: #A0522D; */
 
 
->>>>>>> william
 
   width: 100%;
   height: 200px;
@@ -812,18 +711,6 @@ footer form {
     height:100em;
   }
 }*/
-<<<<<<< HEAD
-/* Moviepage */
-#moviemainimg, #seriesmainimg, #hillhouse, #netflix{
-  width: 75%;
-  height: 10%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-
-}
-=======
 #moviemainimg, #seriesmainimg, #hillhouse, #netflix{
   width: 70%;
   height: 10%;
@@ -843,54 +730,17 @@ footer form {
 
 
 } */
->>>>>>> william
 
 .wrap {
   width: 100%;
   overflow: auto;
-<<<<<<< HEAD
-
-=======
   margin-bottom: 250px;
->>>>>>> william
 
 }
 
 .wrap a {
   text-decoration: none;
   outline: none;
-<<<<<<< HEAD
-  color:yellow;
-}
-
-.wrap a a:visited{
-  color: black;
-}
-
-.latestmovies, .latestseries {
-  width: 50%;
-  float: left;
-  position: relative;
-}
-
-.latestmovies img, .latestseries img{
-  width: 70%;
-
-}
-
-.topmovies, .topseries {
-  width: 50%;
-  position: relative;
-  float: right;
-
-
-}
-
-.topmovies img, .topseries img{
-  width: 70%;
-
-}
-=======
   color:white;
 }
 
@@ -938,7 +788,6 @@ footer form {
   border-left: 5px solid black;
 } */
 
->>>>>>> william
 
 #ck {
  position: absolute;
@@ -969,8 +818,6 @@ footer form {
    margin-right: auto;
    width: 100%;
  }
-<<<<<<< HEAD
-=======
 
  .moviearticle{
    background-color: #162229;
@@ -1078,4 +925,3 @@ footer form {
 
 
 }
->>>>>>> william
