@@ -855,6 +855,7 @@ footer form {
   width:150px;
   float: left;
   margin: 5px 20px;
+  border-radius: 0;
 
 }
 .text .readmore p{
