@@ -80,3 +80,9 @@ body {
   text-align: center;
   margin: auto;
 }
+img{
+  width:500px;
+  height:350px;
+  display: block;
+  margin:auto;
+}
