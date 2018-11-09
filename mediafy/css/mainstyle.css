@@ -302,7 +302,7 @@ nav a:hover::before {
 .column h1{
   font-family: Garamond;
   font-size: 48pt;
-  color: blue;
+  color: #162229;
   text-align: center;
   padding: 110px 0;
 }
