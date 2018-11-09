@@ -513,9 +513,7 @@ article{
   max-width: 70%;
 
 }
-/* .article{
-  max-width: 70%;
-} */
+
 
 
 article header{
@@ -569,14 +567,7 @@ article .text img{
   width: 70%;
   /* position:relative; */
   }
-/*#samfender{
-    width: 450px;
-    height:400px;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-35%);
-}*/
+
 .image > h2{
   position: absolute;
   top: 40px;
@@ -639,13 +630,7 @@ footer h1, p {
   font-family: Helvetica;
   color: white;
 }
-/*.foot{
-  margin-bottom:0;
-  margin-left:0;
-  width:100%;
-  height:200px;
-}
-*/
+
 footer {
   background-color: #162229;
   /* background-color: #D2B48C; */
@@ -659,7 +644,7 @@ footer {
   bottom: 0;
   left: 0;
   display:block;
-  /* visibility: hidden; */
+
 
   text-align: center;
   font-family: Garamond;
@@ -697,38 +682,8 @@ footer #thanks {
   font-family: Helvetica Neue, Helvetica;
 }
 
-/* footer form {
-  float: right;
-} */
-/*footer input[type="email"]{
-  width:250px;
-}
-*/
-/*@media screen and (max-width:1230px) {
-  .latest{
-    top: 80em;
-  }
-  .empty{
-    height:30em;
-  }
 
-}
-@media screen and (max-width:1000px) {
-  .latest{
-    top: 90em;
-  }
-  .empty{
-    height:90em;
-  }
-}
-@media screen and (max-width:700px) {
-  .latest{
-    top: 90em;
-  }
-.empty{
-    height:100em;
-  }
-}*/
+
 #moviemainimg, #seriesmainimg, #hillhouse, #netflix{
   width: 70%;
   height: 10%;
@@ -738,16 +693,6 @@ footer #thanks {
 
 
 }
-/* #headlinemusic{
-  font-size: 48pt;
-  font-family: Helvetica Neue;
-  font-weight: lighter;
-  color:white;
-  text-shadow: #D2B48C 2px -4px;
-  text-align: center;
-
-
-} */
 
 .wrap {
   width: 100%;
@@ -802,9 +747,7 @@ footer #thanks {
 .rap:hover{
   color:#A0522D;
 }
-/* .topmovies{
-  border-left: 5px solid black;
-} */
+
 @media screen and (max-width:680px) {
     .latestmovies, .topmovies{
       width:100%;
@@ -860,7 +803,7 @@ footer #thanks {
   font-family: Garamond;
   font-size: 48pt;
   color: white;
-  /* text-decoration: underline; */
+
 
   margin-top: 10%;
   margin-bottom: 0;
