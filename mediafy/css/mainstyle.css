@@ -516,10 +516,11 @@ article{
 
 
 
-article header{
+article h2, article header{
   font-family: Garamond ;
   line-height: 1.5;
   font-size: 32pt;
+  font-weight: lighter;
   text-align: center;
   margin: auto;
 
@@ -609,6 +610,7 @@ iframe{
   justify-content: center;
   margin:auto;
   padding-bottom: 20px;
+  border : none;
 }
 
 
@@ -850,14 +852,14 @@ footer #thanks {
   margin-top:15px;
 
 }
-.credits #insta, .credits #facebook, .credits #twitter{
+.credits .insta, .credits .facebook, .credits .twitter{
   width: 40px;
   height: 40px;
   margin: 30px 10px;
   float:left;
 
 }
-.socialmedia #insta, .socialmedia #facebook, .socialmedia #twitter{
+.socialmedia .insta, .socialmedia .facebook, .socialmedia .twitter{
   width: 40px;
   height: 40px;
   margin: 10px 10px;
@@ -870,7 +872,7 @@ footer #thanks {
   margin: 5px 25%;
   text-align: center;
 }
-.socialmedia #facebook{
+.socialmedia .facebook{
   margin-left: 30%;
 }
 .readmore:hover{
